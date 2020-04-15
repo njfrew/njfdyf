@@ -4,7 +4,7 @@ In the video, Carter and Dr. Goggins discuss metrics and layouts of metrics. I t
 
 ## Working Group
 
-I said in assignment 11 that I will be participating in the Evolution Working Group, and I will be joining the call on April 15th. 
+I said in assignment 11 that I will be participating in the Evolution Working Group, and I will be joining the call on April 15th. Well, I meant to join the Evolution Working Group call, but the link was incorrect on assignment 11. So, I accidently joined the D&I call.
 
 ## Pull Request
 
