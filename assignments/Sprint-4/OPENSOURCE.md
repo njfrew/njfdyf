@@ -10,10 +10,12 @@ I think most people who participate in open source are somewhere in between in t
 
 ## Article 2
 
-This article is based on a study of FOSS and more specifically business models of FOSS. The article goes in depth on how open-source is becoming bigger and bigger, but the community around open source does not agree on what models work.
+The Linux Foundationa article talks, at first, about business incentives of being involved with open-source projects. One reason is to attact talent. Another is to lower maintenance cost of a project by allowing your maintenance to be in every version of a project. The third one is it allows a business to influence the direction of a project, which is insurmountably valuable.
 
-In the study, they got industry experts and real developers to decide the most effective business models. They narrowed it down to ten with two being the most important. The business models they concluded to are Advertising, Auxiliary services, Corporate development and distribution, crowdfunding, proprietary relicensing, memberships and donations, SaaS with distribution of server software, and Update subscriptions. With the top two being Selling user data and Software Certification.
+The article then goes into the hierarchy of open-source project communities. This hierarchy is important for creating a sense of structure within a community. And how to contribute to a project which is different in each project and also presents a form of structure.
 
-Although, in the end it is realized that not one of the business models is sustainable on its own. For developers, project managers, entrepeneurs, venture capitalist, and whoever else relevant to keep coming back to an open-source project a hybrid model seems to be the most effective.
+When organizations contribute, they must follow the project guidelines and objectives just like anyone else who contributes. This is so they do not affect the true goals of a project.  
 
-This study and article are important because they go into how to make open-source better, and the article answers at part of the question at hand, why participate in open-source. Well, the part of the answer this study reveals is the best thing the commmunity of a project can do is to decide an effective business model like the ones above to incentivize whoever relevant to participate and continue to participate in a project.
+For the normal contributor, they recommend to lurk first, read rules, and start small. They also recommend to get involved with community. And they recommend to have a plan for your contributions.
+
+This article explains some of the reasons to contribute to open-source from an individual's perspective and a businesses. They explain that businesses can gain a lot from contributing to open-source and that well-structured projects should incentivize the individual to contribute because they know exactly what and how they are contributing to the project, which overall makes the contribution more meaningful. This incentivizes the contributors to keep coming back to the project.
