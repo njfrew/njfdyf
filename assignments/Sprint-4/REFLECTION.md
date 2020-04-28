@@ -10,3 +10,6 @@ I did not get far at all. I went through all the instructions that OAuth had for
 
 ## My problems that I ran into
 I ran into the problem of how exactly do I apply the instructions. Where do I put the protocol? How do I program the JS around this protocol? I think I followed OAuth's instructions to an extent, but not knowing where to apply these instructions made it almost impossible to get anywhere with this application. I tried.
+
+# UPDATE
+I looked more into OAuth and HybridAuth over the weekend. I understand it better and worked on some of the PHP files needed for it. I plan to have some working version of this to submit for the next assignment. 
