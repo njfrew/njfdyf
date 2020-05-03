@@ -1,0 +1,6 @@
+framework module Pods_Notes_with_SSOTests {
+  umbrella header "Pods-Notes with SSOTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
