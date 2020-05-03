@@ -1,9 +1,11 @@
+/*
+* Name: Noah Frew
+* Pawprint: njfdyf
+*/
 
 import UIKit
 
 class DisplayNoteViewController: UIViewController, UITextViewDelegate {
-
-    
     @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var contentTextView: UITextView!
     
@@ -27,7 +29,6 @@ class DisplayNoteViewController: UIViewController, UITextViewDelegate {
         let title = titleTextField.text ?? ""
         let content = contentTextView.text ?? ""
         let date = Date()
-        
         var note: Note?
         
         if let existingNote = existingNote {
@@ -50,19 +51,7 @@ class DisplayNoteViewController: UIViewController, UITextViewDelegate {
                 print("Context could not be saved")
             }
         }
-        
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
 
 extension DisplayNoteViewController: UITextFieldDelegate {

@@ -1,11 +1,7 @@
-//
-//  Note+CoreDataProperties.swift
-//  Notes with SSO
-//
-//  Created by Noah Frew on 5/2/20.
-//  Copyright © 2020 NOAH FREW. All rights reserved.
-//
-//
+/*
+* Name: Noah Frew
+* Pawprint: njfdyf
+*/
 
 import Foundation
 import CoreData

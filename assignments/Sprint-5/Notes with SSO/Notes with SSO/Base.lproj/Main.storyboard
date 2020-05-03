@@ -81,7 +81,7 @@
             </objects>
             <point key="canvasLocation" x="1042.0289855072465" y="138.61607142857142"/>
         </scene>
-        <!--Display Note View Controller-->
+        <!--Make a Note-->
         <scene sceneID="h5D-Fy-QaQ">
             <objects>
                 <viewController id="bhK-qb-n6m" customClass="DisplayNoteViewController" customModule="Notes_with_SSO" customModuleProvider="target" sceneMemberID="viewController">
@@ -115,7 +115,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="LBh-Tv-ezY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="U5f-hA-NdK">
+                    <navigationItem key="navigationItem" title="Make a Note" id="U5f-hA-NdK">
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="odZ-eS-P50">
                             <connections>
                                 <action selector="saveNote:" destination="bhK-qb-n6m" id="Q37-LF-Leh"/>
