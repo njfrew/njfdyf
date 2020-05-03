@@ -58,3 +58,5 @@ Multiple Managed Object Contexts with Core Data Tutorial | raywenderlich.com
 Callback URL mismatch - Auth0 Community
 Callback URL mismatch error - Auth0 Community
 MU-Software-Engineering/assignments at master · computationalmystic/MU-Software-Engineering
+
+I hope this is sufficient I couldn't find a way to get the actual URLs from my history.
