@@ -1,80 +1,37 @@
-
-
 import UIKit
 import CoreData
 import Auth0
 
 class NotesViewController: UIViewController {
     var dateFormatter = DateFormatter()
-
+    
     var notes = [Note]()
     
-    private var isAuthenticated = false
-
+    private var isAuthenticated = false {
+        didSet {
+            addButton.isEnabled = isAuthenticated
+            
+            if isAuthenticated {
+                loadNotes()
+            }
+        }
+    }
+    
+    
+    @IBOutlet weak var addButton: UIBarButtonItem!
     @IBOutlet weak var notesTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         dateFormatter.timeStyle = .long
         dateFormatter.dateStyle = .long
-
-    }
-    
-    @IBAction func displayLogin(_ sender: UIBarButtonItem) {
-            guard let clientInfo = plistValues(bundle: Bundle.main) else { return }
-            
-            if(!isAuthenticated){
-                Auth0
-                    .webAuth()
-                    .scope("openid profile")
-                    .audience("https://" + clientInfo.domain + "/userinfo")
-                    .start {
-                        switch $0 {
-                            case .failure(let error):
-                                print("Error: \(error)")
-                            case .success(let credentials):
-                                guard let accessToken = credentials.accessToken else { return }
-                                
-                                DispatchQueue.main.async {
-                                    self.showSuccessAlert("accessToken: \(accessToken)")
-                                    self.isAuthenticated = true
-                                    //sender.setTitle("Log out", for: .normal)
-                                }
-                        }
-                    }
-            }
-            else{
-                Auth0
-                    .webAuth()
-                    .clearSession(federated:false){
-                        switch $0{
-                            case true:
-                                DispatchQueue.main.async {
-                                  //  sender.setTitle("Log in", for: .normal)
-                                    self.isAuthenticated = false
-                                }
-                            case false:
-                                DispatchQueue.main.async {
-                                    self.showSuccessAlert("An error occurred")
-                            }
-                        }
-                    }
-            }
-    }
-
-        // MARK: - Private
-        fileprivate func showSuccessAlert(_ message: String) {
-            let alert = UIAlertController(title: "Message", message: message, preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-            self.present(alert, animated: true, completion: nil)
-        }
         
-    
-    @IBAction func addNewNote(_ sender: Any) {
-        performSegue(withIdentifier: "showNote", sender: self)
+        addButton.isEnabled = isAuthenticated
+        
     }
     
-    override func viewWillAppear(_ animated: Bool) {
+    func loadNotes() {
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
             return
         }
@@ -87,12 +44,65 @@ class NotesViewController: UIViewController {
         } catch {
             print("Fetch could not be performed")
         }
-        
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        if isAuthenticated {
+            loadNotes()
+        }
+    }
+    
+    @IBAction func displayLogin(_ sender: UIBarButtonItem) {
+        guard let clientInfo = plistValues(bundle: Bundle.main) else { return }
+        
+        if !isAuthenticated {
+            Auth0
+                .webAuth()
+                .scope("openid profile")
+                .audience("https://" + clientInfo.domain + "/userinfo")
+                .start {
+                    switch $0 {
+                    case .failure(let error):
+                        print("Error: \(error)")
+                    case .success:
+                        DispatchQueue.main.async {
+                            self.isAuthenticated = true
+                            sender.title = "Log Out"
+                        }
+                    }
+            }
+        } else {
+            Auth0
+                .webAuth()
+                .clearSession(federated:false) {
+                    switch $0 {
+                    case true:
+                        DispatchQueue.main.async {
+                            sender.title = "Log In"
+                            self.isAuthenticated = false
+                            self.notes = []
+                            self.notesTableView.reloadData()
+                        }
+                    case false:
+                        DispatchQueue.main.async {
+                            print("An error occurred")
+                        }
+                    }
+            }
+        }
+    }
+    
+    
+    
+    @IBAction func addNewNote(_ sender: Any) {
+        performSegue(withIdentifier: "showNote", sender: self)
+    }
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let destination = segue.destination as? DisplayNoteViewController, let selectedRow = self.notesTableView.indexPathForSelectedRow?.row else {
-                return
+            return
         }
         
         destination.existingNote = notes[selectedRow]
@@ -123,8 +133,8 @@ class NotesViewController: UIViewController {
     }
     
     
-
-
+    
+    
 }
 
 extension NotesViewController: UITableViewDataSource {
@@ -169,7 +179,7 @@ func plistValues(bundle: Bundle) -> (clientId: String, domain: String)? {
             print("Missing Auth0.plist file with 'ClientId' and 'Domain' entries in main bundle!")
             return nil
     }
-
+    
     guard
         let clientId = values["ClientId"] as? String,
         let domain = values["Domain"] as? String

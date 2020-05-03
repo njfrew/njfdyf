@@ -1,10 +1,3 @@
-//
-//  DisplayNoteViewController.swift
-//  Notes with SSO
-//
-//  Created by Noah Frew on 4/30/20.
-//  Copyright © 2020 NOAH FREW. All rights reserved.
-//
 
 import UIKit
 
@@ -25,8 +18,9 @@ class DisplayNoteViewController: UIViewController, UITextViewDelegate {
         contentTextView.text = existingNote?.content
         existingNote?.date = Date()
         
-
-        // Do any additional setup after loading the view.
+        contentTextView.layer.borderColor = titleTextField.layer.borderColor
+        contentTextView.layer.borderWidth = 0.2
+        contentTextView.layer.cornerRadius = 4
     }
     
     @IBAction func saveNote(_ sender: UIBarButtonItem) {

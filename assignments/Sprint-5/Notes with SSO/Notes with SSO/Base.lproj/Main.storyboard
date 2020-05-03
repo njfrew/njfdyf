@@ -73,6 +73,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="addButton" destination="nrx-7u-caj" id="C6V-N7-kNJ"/>
                         <outlet property="notesTableView" destination="a4F-Tr-a5V" id="ALI-to-oaN"/>
                     </connections>
                 </viewController>
