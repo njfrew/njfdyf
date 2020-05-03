@@ -1,0 +1,618 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8CABAE18245BAB770026F05F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CABAE17245BAB770026F05F /* AppDelegate.swift */; };
+		8CABAE1A245BAB770026F05F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CABAE19245BAB770026F05F /* SceneDelegate.swift */; };
+		8CABAE1F245BAB770026F05F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CABAE1D245BAB770026F05F /* Main.storyboard */; };
+		8CABAE22245BAB770026F05F /* Notes_with_SSO.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8CABAE20245BAB770026F05F /* Notes_with_SSO.xcdatamodeld */; };
+		8CABAE24245BAB790026F05F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CABAE23245BAB790026F05F /* Assets.xcassets */; };
+		8CABAE27245BAB790026F05F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CABAE25245BAB790026F05F /* LaunchScreen.storyboard */; };
+		8CABAE32245BAB790026F05F /* Notes_with_SSOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CABAE31245BAB790026F05F /* Notes_with_SSOTests.swift */; };
+		8CABAE3D245BAB790026F05F /* Notes_with_SSOUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CABAE3C245BAB790026F05F /* Notes_with_SSOUITests.swift */; };
+		8CABAE4B245BAB9C0026F05F /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CABAE4A245BAB9C0026F05F /* NotesViewController.swift */; };
+		8CABAE4D245BACD60026F05F /* DisplayNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CABAE4C245BACD60026F05F /* DisplayNoteViewController.swift */; };
+		8CABAE60245E35D70026F05F /* Note+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CABAE5E245E35D70026F05F /* Note+CoreDataClass.swift */; };
+		8CABAE61245E35D70026F05F /* Note+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CABAE5F245E35D70026F05F /* Note+CoreDataProperties.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8CABAE2E245BAB790026F05F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8CABAE0C245BAB770026F05F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8CABAE13245BAB770026F05F;
+			remoteInfo = "Notes with SSO";
+		};
+		8CABAE39245BAB790026F05F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8CABAE0C245BAB770026F05F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8CABAE13245BAB770026F05F;
+			remoteInfo = "Notes with SSO";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8CABAE14245BAB770026F05F /* Notes with SSO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Notes with SSO.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CABAE17245BAB770026F05F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8CABAE19245BAB770026F05F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8CABAE1E245BAB770026F05F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8CABAE21245BAB770026F05F /* Notes_with_SSO.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Notes_with_SSO.xcdatamodel; sourceTree = "<group>"; };
+		8CABAE23245BAB790026F05F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8CABAE26245BAB790026F05F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8CABAE28245BAB790026F05F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CABAE2D245BAB790026F05F /* Notes with SSOTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Notes with SSOTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CABAE31245BAB790026F05F /* Notes_with_SSOTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notes_with_SSOTests.swift; sourceTree = "<group>"; };
+		8CABAE33245BAB790026F05F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CABAE38245BAB790026F05F /* Notes with SSOUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Notes with SSOUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CABAE3C245BAB790026F05F /* Notes_with_SSOUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notes_with_SSOUITests.swift; sourceTree = "<group>"; };
+		8CABAE3E245BAB790026F05F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CABAE4A245BAB9C0026F05F /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
+		8CABAE4C245BACD60026F05F /* DisplayNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayNoteViewController.swift; sourceTree = "<group>"; };
+		8CABAE5E245E35D70026F05F /* Note+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Note+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		8CABAE5F245E35D70026F05F /* Note+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Note+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8CABAE11245BAB770026F05F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CABAE2A245BAB790026F05F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CABAE35245BAB790026F05F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8CABAE0B245BAB770026F05F = {
+			isa = PBXGroup;
+			children = (
+				8CABAE16245BAB770026F05F /* Notes with SSO */,
+				8CABAE30245BAB790026F05F /* Notes with SSOTests */,
+				8CABAE3B245BAB790026F05F /* Notes with SSOUITests */,
+				8CABAE15245BAB770026F05F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8CABAE15245BAB770026F05F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8CABAE14245BAB770026F05F /* Notes with SSO.app */,
+				8CABAE2D245BAB790026F05F /* Notes with SSOTests.xctest */,
+				8CABAE38245BAB790026F05F /* Notes with SSOUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8CABAE16245BAB770026F05F /* Notes with SSO */ = {
+			isa = PBXGroup;
+			children = (
+				8CABAE5E245E35D70026F05F /* Note+CoreDataClass.swift */,
+				8CABAE5F245E35D70026F05F /* Note+CoreDataProperties.swift */,
+				8CABAE17245BAB770026F05F /* AppDelegate.swift */,
+				8CABAE19245BAB770026F05F /* SceneDelegate.swift */,
+				8CABAE1D245BAB770026F05F /* Main.storyboard */,
+				8CABAE23245BAB790026F05F /* Assets.xcassets */,
+				8CABAE25245BAB790026F05F /* LaunchScreen.storyboard */,
+				8CABAE28245BAB790026F05F /* Info.plist */,
+				8CABAE20245BAB770026F05F /* Notes_with_SSO.xcdatamodeld */,
+				8CABAE4A245BAB9C0026F05F /* NotesViewController.swift */,
+				8CABAE4C245BACD60026F05F /* DisplayNoteViewController.swift */,
+			);
+			path = "Notes with SSO";
+			sourceTree = "<group>";
+		};
+		8CABAE30245BAB790026F05F /* Notes with SSOTests */ = {
+			isa = PBXGroup;
+			children = (
+				8CABAE31245BAB790026F05F /* Notes_with_SSOTests.swift */,
+				8CABAE33245BAB790026F05F /* Info.plist */,
+			);
+			path = "Notes with SSOTests";
+			sourceTree = "<group>";
+		};
+		8CABAE3B245BAB790026F05F /* Notes with SSOUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8CABAE3C245BAB790026F05F /* Notes_with_SSOUITests.swift */,
+				8CABAE3E245BAB790026F05F /* Info.plist */,
+			);
+			path = "Notes with SSOUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8CABAE13245BAB770026F05F /* Notes with SSO */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CABAE41245BAB790026F05F /* Build configuration list for PBXNativeTarget "Notes with SSO" */;
+			buildPhases = (
+				8CABAE10245BAB770026F05F /* Sources */,
+				8CABAE11245BAB770026F05F /* Frameworks */,
+				8CABAE12245BAB770026F05F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Notes with SSO";
+			productName = "Notes with SSO";
+			productReference = 8CABAE14245BAB770026F05F /* Notes with SSO.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8CABAE2C245BAB790026F05F /* Notes with SSOTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CABAE44245BAB790026F05F /* Build configuration list for PBXNativeTarget "Notes with SSOTests" */;
+			buildPhases = (
+				8CABAE29245BAB790026F05F /* Sources */,
+				8CABAE2A245BAB790026F05F /* Frameworks */,
+				8CABAE2B245BAB790026F05F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8CABAE2F245BAB790026F05F /* PBXTargetDependency */,
+			);
+			name = "Notes with SSOTests";
+			productName = "Notes with SSOTests";
+			productReference = 8CABAE2D245BAB790026F05F /* Notes with SSOTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8CABAE37245BAB790026F05F /* Notes with SSOUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CABAE47245BAB790026F05F /* Build configuration list for PBXNativeTarget "Notes with SSOUITests" */;
+			buildPhases = (
+				8CABAE34245BAB790026F05F /* Sources */,
+				8CABAE35245BAB790026F05F /* Frameworks */,
+				8CABAE36245BAB790026F05F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8CABAE3A245BAB790026F05F /* PBXTargetDependency */,
+			);
+			name = "Notes with SSOUITests";
+			productName = "Notes with SSOUITests";
+			productReference = 8CABAE38245BAB790026F05F /* Notes with SSOUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8CABAE0C245BAB770026F05F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "NOAH FREW";
+				TargetAttributes = {
+					8CABAE13245BAB770026F05F = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					8CABAE2C245BAB790026F05F = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = 8CABAE13245BAB770026F05F;
+					};
+					8CABAE37245BAB790026F05F = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = 8CABAE13245BAB770026F05F;
+					};
+				};
+			};
+			buildConfigurationList = 8CABAE0F245BAB770026F05F /* Build configuration list for PBXProject "Notes with SSO" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8CABAE0B245BAB770026F05F;
+			productRefGroup = 8CABAE15245BAB770026F05F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8CABAE13245BAB770026F05F /* Notes with SSO */,
+				8CABAE2C245BAB790026F05F /* Notes with SSOTests */,
+				8CABAE37245BAB790026F05F /* Notes with SSOUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8CABAE12245BAB770026F05F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CABAE27245BAB790026F05F /* LaunchScreen.storyboard in Resources */,
+				8CABAE24245BAB790026F05F /* Assets.xcassets in Resources */,
+				8CABAE1F245BAB770026F05F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CABAE2B245BAB790026F05F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CABAE36245BAB790026F05F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8CABAE10245BAB770026F05F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CABAE4B245BAB9C0026F05F /* NotesViewController.swift in Sources */,
+				8CABAE61245E35D70026F05F /* Note+CoreDataProperties.swift in Sources */,
+				8CABAE18245BAB770026F05F /* AppDelegate.swift in Sources */,
+				8CABAE1A245BAB770026F05F /* SceneDelegate.swift in Sources */,
+				8CABAE60245E35D70026F05F /* Note+CoreDataClass.swift in Sources */,
+				8CABAE4D245BACD60026F05F /* DisplayNoteViewController.swift in Sources */,
+				8CABAE22245BAB770026F05F /* Notes_with_SSO.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CABAE29245BAB790026F05F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CABAE32245BAB790026F05F /* Notes_with_SSOTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CABAE34245BAB790026F05F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CABAE3D245BAB790026F05F /* Notes_with_SSOUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8CABAE2F245BAB790026F05F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8CABAE13245BAB770026F05F /* Notes with SSO */;
+			targetProxy = 8CABAE2E245BAB790026F05F /* PBXContainerItemProxy */;
+		};
+		8CABAE3A245BAB790026F05F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8CABAE13245BAB770026F05F /* Notes with SSO */;
+			targetProxy = 8CABAE39245BAB790026F05F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8CABAE1D245BAB770026F05F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8CABAE1E245BAB770026F05F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8CABAE25245BAB790026F05F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8CABAE26245BAB790026F05F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8CABAE3F245BAB790026F05F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8CABAE40245BAB790026F05F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8CABAE42245BAB790026F05F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Notes with SSO/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.missouri.Notes-with-SSO";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8CABAE43245BAB790026F05F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Notes with SSO/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.missouri.Notes-with-SSO";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8CABAE45245BAB790026F05F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Notes with SSOTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.missouri.Notes-with-SSOTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Notes with SSO.app/Notes with SSO";
+			};
+			name = Debug;
+		};
+		8CABAE46245BAB790026F05F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Notes with SSOTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.missouri.Notes-with-SSOTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Notes with SSO.app/Notes with SSO";
+			};
+			name = Release;
+		};
+		8CABAE48245BAB790026F05F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Notes with SSOUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.missouri.Notes-with-SSOUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Notes with SSO";
+			};
+			name = Debug;
+		};
+		8CABAE49245BAB790026F05F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Notes with SSOUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.missouri.Notes-with-SSOUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Notes with SSO";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8CABAE0F245BAB770026F05F /* Build configuration list for PBXProject "Notes with SSO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CABAE3F245BAB790026F05F /* Debug */,
+				8CABAE40245BAB790026F05F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CABAE41245BAB790026F05F /* Build configuration list for PBXNativeTarget "Notes with SSO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CABAE42245BAB790026F05F /* Debug */,
+				8CABAE43245BAB790026F05F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CABAE44245BAB790026F05F /* Build configuration list for PBXNativeTarget "Notes with SSOTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CABAE45245BAB790026F05F /* Debug */,
+				8CABAE46245BAB790026F05F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CABAE47245BAB790026F05F /* Build configuration list for PBXNativeTarget "Notes with SSOUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CABAE48245BAB790026F05F /* Debug */,
+				8CABAE49245BAB790026F05F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8CABAE20245BAB770026F05F /* Notes_with_SSO.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8CABAE21245BAB770026F05F /* Notes_with_SSO.xcdatamodel */,
+			);
+			currentVersion = 8CABAE21245BAB770026F05F /* Notes_with_SSO.xcdatamodel */;
+			path = Notes_with_SSO.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 8CABAE0C245BAB770026F05F /* Project object */;
+}
