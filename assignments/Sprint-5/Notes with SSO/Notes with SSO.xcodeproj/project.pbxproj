@@ -3,11 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7075A0B37D10BB4BB7FE4DC3 /* Pods_Notes_with_SSOTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7900073CBF6B882DE3969DAD /* Pods_Notes_with_SSOTests.framework */; };
 		8CABAE18245BAB770026F05F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CABAE17245BAB770026F05F /* AppDelegate.swift */; };
 		8CABAE1A245BAB770026F05F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CABAE19245BAB770026F05F /* SceneDelegate.swift */; };
 		8CABAE1F245BAB770026F05F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CABAE1D245BAB770026F05F /* Main.storyboard */; };
@@ -20,7 +19,7 @@
 		8CABAE4D245BACD60026F05F /* DisplayNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CABAE4C245BACD60026F05F /* DisplayNoteViewController.swift */; };
 		8CABAE60245E35D70026F05F /* Note+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CABAE5E245E35D70026F05F /* Note+CoreDataClass.swift */; };
 		8CABAE61245E35D70026F05F /* Note+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CABAE5F245E35D70026F05F /* Note+CoreDataProperties.swift */; };
-		C5719D43D5842751B71577D7 /* Pods_Notes_with_SSO_Notes_with_SSOUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E21598B7EC717AAF70F3200F /* Pods_Notes_with_SSO_Notes_with_SSOUITests.framework */; };
+		8CABAE63245F2BDF0026F05F /* Auth0.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8CABAE62245F2BDF0026F05F /* Auth0.plist */; };
 		DC7F8CD3B1CBEBA2AA36F737 /* Pods_Notes_with_SSO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5A756B8BF2EF3EEA949F14E /* Pods_Notes_with_SSO.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,11 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0811DE42C2F396A67608F294 /* Pods-Notes with SSOTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Notes with SSOTests.debug.xcconfig"; path = "Target Support Files/Pods-Notes with SSOTests/Pods-Notes with SSOTests.debug.xcconfig"; sourceTree = "<group>"; };
 		22B9F05A34D82667D05F3F55 /* Pods-Notes with SSO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Notes with SSO.release.xcconfig"; path = "Target Support Files/Pods-Notes with SSO/Pods-Notes with SSO.release.xcconfig"; sourceTree = "<group>"; };
 		3B9664CDDAB0FA4C165B0E91 /* Pods-Notes with SSO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Notes with SSO.debug.xcconfig"; path = "Target Support Files/Pods-Notes with SSO/Pods-Notes with SSO.debug.xcconfig"; sourceTree = "<group>"; };
-		472D18C1C812252693155917 /* Pods-Notes with SSOTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Notes with SSOTests.release.xcconfig"; path = "Target Support Files/Pods-Notes with SSOTests/Pods-Notes with SSOTests.release.xcconfig"; sourceTree = "<group>"; };
-		7900073CBF6B882DE3969DAD /* Pods_Notes_with_SSOTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Notes_with_SSOTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CABAE14245BAB770026F05F /* Notes with SSO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Notes with SSO.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CABAE17245BAB770026F05F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CABAE19245BAB770026F05F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,10 +61,8 @@
 		8CABAE4C245BACD60026F05F /* DisplayNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayNoteViewController.swift; sourceTree = "<group>"; };
 		8CABAE5E245E35D70026F05F /* Note+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Note+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
 		8CABAE5F245E35D70026F05F /* Note+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Note+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
-		A31C996F70BFFB08025E2583 /* Pods-Notes with SSO-Notes with SSOUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Notes with SSO-Notes with SSOUITests.debug.xcconfig"; path = "Target Support Files/Pods-Notes with SSO-Notes with SSOUITests/Pods-Notes with SSO-Notes with SSOUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		E21598B7EC717AAF70F3200F /* Pods_Notes_with_SSO_Notes_with_SSOUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Notes_with_SSO_Notes_with_SSOUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CABAE62245F2BDF0026F05F /* Auth0.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Auth0.plist; sourceTree = "<group>"; };
 		E5A756B8BF2EF3EEA949F14E /* Pods_Notes_with_SSO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Notes_with_SSO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F9ECFAE967E0CC2015963987 /* Pods-Notes with SSO-Notes with SSOUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Notes with SSO-Notes with SSOUITests.release.xcconfig"; path = "Target Support Files/Pods-Notes with SSO-Notes with SSOUITests/Pods-Notes with SSO-Notes with SSOUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +78,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7075A0B37D10BB4BB7FE4DC3 /* Pods_Notes_with_SSOTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,7 +85,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5719D43D5842751B71577D7 /* Pods_Notes_with_SSO_Notes_with_SSOUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +127,7 @@
 				8CABAE20245BAB770026F05F /* Notes_with_SSO.xcdatamodeld */,
 				8CABAE4A245BAB9C0026F05F /* NotesViewController.swift */,
 				8CABAE4C245BACD60026F05F /* DisplayNoteViewController.swift */,
+				8CABAE62245F2BDF0026F05F /* Auth0.plist */,
 			);
 			path = "Notes with SSO";
 			sourceTree = "<group>";
@@ -162,12 +155,7 @@
 			children = (
 				3B9664CDDAB0FA4C165B0E91 /* Pods-Notes with SSO.debug.xcconfig */,
 				22B9F05A34D82667D05F3F55 /* Pods-Notes with SSO.release.xcconfig */,
-				A31C996F70BFFB08025E2583 /* Pods-Notes with SSO-Notes with SSOUITests.debug.xcconfig */,
-				F9ECFAE967E0CC2015963987 /* Pods-Notes with SSO-Notes with SSOUITests.release.xcconfig */,
-				0811DE42C2F396A67608F294 /* Pods-Notes with SSOTests.debug.xcconfig */,
-				472D18C1C812252693155917 /* Pods-Notes with SSOTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -175,8 +163,6 @@
 			isa = PBXGroup;
 			children = (
 				E5A756B8BF2EF3EEA949F14E /* Pods_Notes_with_SSO.framework */,
-				E21598B7EC717AAF70F3200F /* Pods_Notes_with_SSO_Notes_with_SSOUITests.framework */,
-				7900073CBF6B882DE3969DAD /* Pods_Notes_with_SSOTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -207,7 +193,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8CABAE44245BAB790026F05F /* Build configuration list for PBXNativeTarget "Notes with SSOTests" */;
 			buildPhases = (
-				E4523D8E3EE98A6F7A2038FC /* [CP] Check Pods Manifest.lock */,
 				8CABAE29245BAB790026F05F /* Sources */,
 				8CABAE2A245BAB790026F05F /* Frameworks */,
 				8CABAE2B245BAB790026F05F /* Resources */,
@@ -226,11 +211,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8CABAE47245BAB790026F05F /* Build configuration list for PBXNativeTarget "Notes with SSOUITests" */;
 			buildPhases = (
-				04D58826E4B153E5EAA97195 /* [CP] Check Pods Manifest.lock */,
 				8CABAE34245BAB790026F05F /* Sources */,
 				8CABAE35245BAB790026F05F /* Frameworks */,
 				8CABAE36245BAB790026F05F /* Resources */,
-				D47A670D9B5FCD2312E1D027 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -293,6 +276,7 @@
 				8CABAE27245BAB790026F05F /* LaunchScreen.storyboard in Resources */,
 				8CABAE24245BAB790026F05F /* Assets.xcassets in Resources */,
 				8CABAE1F245BAB770026F05F /* Main.storyboard in Resources */,
+				8CABAE63245F2BDF0026F05F /* Auth0.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,28 +297,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		04D58826E4B153E5EAA97195 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Notes with SSO-Notes with SSOUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		CC964D3A732FD00F44E430FE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -351,45 +313,6 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-Notes with SSO-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D47A670D9B5FCD2312E1D027 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Notes with SSO-Notes with SSOUITests/Pods-Notes with SSO-Notes with SSOUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Notes with SSO-Notes with SSOUITests/Pods-Notes with SSO-Notes with SSOUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Notes with SSO-Notes with SSOUITests/Pods-Notes with SSO-Notes with SSOUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E4523D8E3EE98A6F7A2038FC /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Notes with SSOTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -633,7 +556,6 @@
 		};
 		8CABAE45245BAB790026F05F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0811DE42C2F396A67608F294 /* Pods-Notes with SSOTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -655,7 +577,6 @@
 		};
 		8CABAE46245BAB790026F05F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 472D18C1C812252693155917 /* Pods-Notes with SSOTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -677,7 +598,6 @@
 		};
 		8CABAE48245BAB790026F05F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A31C996F70BFFB08025E2583 /* Pods-Notes with SSO-Notes with SSOUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -697,7 +617,6 @@
 		};
 		8CABAE49245BAB790026F05F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F9ECFAE967E0CC2015963987 /* Pods-Notes with SSO-Notes with SSOUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

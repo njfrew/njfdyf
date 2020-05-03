@@ -1,6 +1,0 @@
-framework module Pods_Notes_with_SSO_Notes_with_SSOUITests {
-  umbrella header "Pods-Notes with SSO-Notes with SSOUITests-umbrella.h"
-
-  export *
-  module * { export * }
-}

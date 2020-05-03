@@ -1,18 +1,15 @@
-//
-//  NotesViewController.swift
-//  Notes with SSO
-//
-//  Created by Noah Frew on 4/30/20.
-//  Copyright © 2020 NOAH FREW. All rights reserved.
-//
+
 
 import UIKit
 import CoreData
+import Auth0
 
 class NotesViewController: UIViewController {
     var dateFormatter = DateFormatter()
 
     var notes = [Note]()
+    
+    private var isAuthenticated = false
 
     @IBOutlet weak var notesTableView: UITableView!
     override func viewDidLoad() {
@@ -20,13 +17,58 @@ class NotesViewController: UIViewController {
 
         dateFormatter.timeStyle = .long
         dateFormatter.dateStyle = .long
-        // Do any additional setup after loading the view.
+
     }
     
-    @IBAction func displayLogin(_ sender: Any) {
-        let alert = UIAlertController(title: "Log In", message: nil, preferredStyle: .alert)
-        
+    @IBAction func displayLogin(_ sender: UIBarButtonItem) {
+            guard let clientInfo = plistValues(bundle: Bundle.main) else { return }
+            
+            if(!isAuthenticated){
+                Auth0
+                    .webAuth()
+                    .scope("openid profile")
+                    .audience("https://" + clientInfo.domain + "/userinfo")
+                    .start {
+                        switch $0 {
+                            case .failure(let error):
+                                print("Error: \(error)")
+                            case .success(let credentials):
+                                guard let accessToken = credentials.accessToken else { return }
+                                
+                                DispatchQueue.main.async {
+                                    self.showSuccessAlert("accessToken: \(accessToken)")
+                                    self.isAuthenticated = true
+                                    //sender.setTitle("Log out", for: .normal)
+                                }
+                        }
+                    }
+            }
+            else{
+                Auth0
+                    .webAuth()
+                    .clearSession(federated:false){
+                        switch $0{
+                            case true:
+                                DispatchQueue.main.async {
+                                  //  sender.setTitle("Log in", for: .normal)
+                                    self.isAuthenticated = false
+                                }
+                            case false:
+                                DispatchQueue.main.async {
+                                    self.showSuccessAlert("An error occurred")
+                            }
+                        }
+                    }
+            }
     }
+
+        // MARK: - Private
+        fileprivate func showSuccessAlert(_ message: String) {
+            let alert = UIAlertController(title: "Message", message: message, preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
+        
     
     @IBAction func addNewNote(_ sender: Any) {
         performSegue(withIdentifier: "showNote", sender: self)
@@ -74,6 +116,10 @@ class NotesViewController: UIViewController {
                 notesTableView.reloadRows(at: [indexPath], with: .automatic)
             }
         }
+        
+        func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any]) -> Bool {
+            return Auth0.resumeAuth(url, options: options)
+        }
     }
     
     
@@ -113,4 +159,24 @@ extension NotesViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         performSegue(withIdentifier: "showNote", sender: self)
     }
+}
+
+func plistValues(bundle: Bundle) -> (clientId: String, domain: String)? {
+    guard
+        let path = bundle.path(forResource: "Auth0", ofType: "plist"),
+        let values = NSDictionary(contentsOfFile: path) as? [String: Any]
+        else {
+            print("Missing Auth0.plist file with 'ClientId' and 'Domain' entries in main bundle!")
+            return nil
+    }
+
+    guard
+        let clientId = values["ClientId"] as? String,
+        let domain = values["Domain"] as? String
+        else {
+            print("Auth0.plist file at \(path) is missing 'ClientId' and/or 'Domain' entries!")
+            print("File currently has the following entries: \(values)")
+            return nil
+    }
+    return (clientId: clientId, domain: domain)
 }

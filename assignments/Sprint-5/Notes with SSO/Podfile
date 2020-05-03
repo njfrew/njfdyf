@@ -1,22 +1,6 @@
-# Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+platform :ios, '13.4'
 
 target 'Notes with SSO' do
-  # Comment the next line if you don't want to use dynamic frameworks
-  use_frameworks!
-
-  # Pods for Notes with SSO
-
-  target 'Notes with SSOTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-  target 'Notes with SSOUITests' do
-    # Pods for testing
-  end
-
   use_frameworks!
   pod 'Auth0', '~> 1.19'
-
 end
