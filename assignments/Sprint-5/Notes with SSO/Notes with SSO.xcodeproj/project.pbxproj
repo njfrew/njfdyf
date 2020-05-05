@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C8259DD2461F9E700E64A38 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8259DB2461F9E700E64A38 /* User+CoreDataClass.swift */; };
+		8C8259DE2461F9E700E64A38 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8259DC2461F9E700E64A38 /* User+CoreDataProperties.swift */; };
+		8C8259E12461FABE00E64A38 /* Note+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8259DF2461FABE00E64A38 /* Note+CoreDataClass.swift */; };
+		8C8259E22461FABE00E64A38 /* Note+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8259E02461FABE00E64A38 /* Note+CoreDataProperties.swift */; };
 		8CABAE18245BAB770026F05F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CABAE17245BAB770026F05F /* AppDelegate.swift */; };
 		8CABAE1A245BAB770026F05F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CABAE19245BAB770026F05F /* SceneDelegate.swift */; };
 		8CABAE1F245BAB770026F05F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CABAE1D245BAB770026F05F /* Main.storyboard */; };
@@ -17,8 +21,6 @@
 		8CABAE3D245BAB790026F05F /* Notes_with_SSOUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CABAE3C245BAB790026F05F /* Notes_with_SSOUITests.swift */; };
 		8CABAE4B245BAB9C0026F05F /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CABAE4A245BAB9C0026F05F /* NotesViewController.swift */; };
 		8CABAE4D245BACD60026F05F /* DisplayNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CABAE4C245BACD60026F05F /* DisplayNoteViewController.swift */; };
-		8CABAE60245E35D70026F05F /* Note+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CABAE5E245E35D70026F05F /* Note+CoreDataClass.swift */; };
-		8CABAE61245E35D70026F05F /* Note+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CABAE5F245E35D70026F05F /* Note+CoreDataProperties.swift */; };
 		8CABAE63245F2BDF0026F05F /* Auth0.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8CABAE62245F2BDF0026F05F /* Auth0.plist */; };
 		DC7F8CD3B1CBEBA2AA36F737 /* Pods_Notes_with_SSO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5A756B8BF2EF3EEA949F14E /* Pods_Notes_with_SSO.framework */; };
 /* End PBXBuildFile section */
@@ -43,6 +45,10 @@
 /* Begin PBXFileReference section */
 		22B9F05A34D82667D05F3F55 /* Pods-Notes with SSO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Notes with SSO.release.xcconfig"; path = "Target Support Files/Pods-Notes with SSO/Pods-Notes with SSO.release.xcconfig"; sourceTree = "<group>"; };
 		3B9664CDDAB0FA4C165B0E91 /* Pods-Notes with SSO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Notes with SSO.debug.xcconfig"; path = "Target Support Files/Pods-Notes with SSO/Pods-Notes with SSO.debug.xcconfig"; sourceTree = "<group>"; };
+		8C8259DB2461F9E700E64A38 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		8C8259DC2461F9E700E64A38 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		8C8259DF2461FABE00E64A38 /* Note+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Note+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		8C8259E02461FABE00E64A38 /* Note+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Note+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		8CABAE14245BAB770026F05F /* Notes with SSO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Notes with SSO.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CABAE17245BAB770026F05F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CABAE19245BAB770026F05F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,8 +65,6 @@
 		8CABAE3E245BAB790026F05F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8CABAE4A245BAB9C0026F05F /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
 		8CABAE4C245BACD60026F05F /* DisplayNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayNoteViewController.swift; sourceTree = "<group>"; };
-		8CABAE5E245E35D70026F05F /* Note+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Note+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
-		8CABAE5F245E35D70026F05F /* Note+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Note+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		8CABAE62245F2BDF0026F05F /* Auth0.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Auth0.plist; sourceTree = "<group>"; };
 		E5A756B8BF2EF3EEA949F14E /* Pods_Notes_with_SSO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Notes_with_SSO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -116,8 +120,10 @@
 		8CABAE16245BAB770026F05F /* Notes with SSO */ = {
 			isa = PBXGroup;
 			children = (
-				8CABAE5E245E35D70026F05F /* Note+CoreDataClass.swift */,
-				8CABAE5F245E35D70026F05F /* Note+CoreDataProperties.swift */,
+				8C8259DF2461FABE00E64A38 /* Note+CoreDataClass.swift */,
+				8C8259E02461FABE00E64A38 /* Note+CoreDataProperties.swift */,
+				8C8259DB2461F9E700E64A38 /* User+CoreDataClass.swift */,
+				8C8259DC2461F9E700E64A38 /* User+CoreDataProperties.swift */,
 				8CABAE17245BAB770026F05F /* AppDelegate.swift */,
 				8CABAE19245BAB770026F05F /* SceneDelegate.swift */,
 				8CABAE1D245BAB770026F05F /* Main.storyboard */,
@@ -344,12 +350,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CABAE4B245BAB9C0026F05F /* NotesViewController.swift in Sources */,
-				8CABAE61245E35D70026F05F /* Note+CoreDataProperties.swift in Sources */,
 				8CABAE18245BAB770026F05F /* AppDelegate.swift in Sources */,
 				8CABAE1A245BAB770026F05F /* SceneDelegate.swift in Sources */,
-				8CABAE60245E35D70026F05F /* Note+CoreDataClass.swift in Sources */,
 				8CABAE4D245BACD60026F05F /* DisplayNoteViewController.swift in Sources */,
+				8C8259DD2461F9E700E64A38 /* User+CoreDataClass.swift in Sources */,
+				8C8259E12461FABE00E64A38 /* Note+CoreDataClass.swift in Sources */,
 				8CABAE22245BAB770026F05F /* Notes_with_SSO.xcdatamodeld in Sources */,
+				8C8259DE2461F9E700E64A38 /* User+CoreDataProperties.swift in Sources */,
+				8C8259E22461FABE00E64A38 /* Note+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

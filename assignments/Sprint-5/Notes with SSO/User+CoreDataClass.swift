@@ -1,5 +1,5 @@
 //
-//  Note+CoreDataClass.swift
+//  User+CoreDataClass.swift
 //  Notes with SSO
 //
 //  Created by Noah Frew on 5/5/20.
@@ -10,18 +10,16 @@
 import UIKit
 import CoreData
 
-@objc(Note)
-public class Note: NSManagedObject {
-    convenience init?(title: String, content:String, date: Date) {
+@objc(User)
+public class User: NSManagedObject {
+    convenience init?(userID: String) {
         let appDelegate = UIApplication.shared.delegate as? AppDelegate
         guard let managedContext = appDelegate?.persistentContainer.viewContext else {
             return nil
         }
         
-        self.init(entity: Note.entity(), insertInto: managedContext)
+        self.init(entity: User.entity(), insertInto: managedContext)
         
-        self.title = title
-        self.content = content
-        self.date = date
+        self.userID = userID
     }
 }
