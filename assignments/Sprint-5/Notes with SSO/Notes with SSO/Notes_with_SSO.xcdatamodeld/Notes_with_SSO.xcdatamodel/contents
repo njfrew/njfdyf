@@ -4,14 +4,8 @@
         <attribute name="content" optional="YES" attributeType="String"/>
         <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="title" optional="YES" attributeType="String"/>
-        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="notes" inverseEntity="User"/>
-    </entity>
-    <entity name="User" representedClassName="User" syncable="YES">
-        <attribute name="userID" optional="YES" attributeType="String"/>
-        <relationship name="notes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Note" inverseName="user" inverseEntity="Note"/>
     </entity>
     <elements>
-        <element name="Note" positionX="-63" positionY="-18" width="128" height="103"/>
-        <element name="User" positionX="227.12890625" positionY="11.08203125" width="128" height="73"/>
+        <element name="Note" positionX="-63" positionY="-18" width="128" height="88"/>
     </elements>
 </model>

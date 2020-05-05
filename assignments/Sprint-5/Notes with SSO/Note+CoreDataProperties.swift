@@ -20,6 +20,5 @@ extension Note {
     @NSManaged public var content: String?
     @NSManaged public var date: Date?
     @NSManaged public var title: String?
-    @NSManaged public var user: User?
 
 }

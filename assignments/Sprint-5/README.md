@@ -4,3 +4,7 @@ Download Notes With SSO folder to your machine. Open the folder in Xcode. Hit th
 
 ## Technologies Used
 I used iOS and Swift to build this app in Xcode. I used iOS's Core Data for data persistence. I used Auth0 for the SSO, and I used CocoaPods to download and use it on my app. 
+
+
+## EDIT
+You actually need to open the .xcworkspace version of the project in xcode for the app to run. So go to the file and click on the Note with SSO.xcworkspace and hit open with xcode and run it the same way I said above.
