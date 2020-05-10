@@ -1,0 +1,24 @@
+PODS:
+  - Auth0 (1.24.1):
+    - JWTDecode
+    - SimpleKeychain
+  - JWTDecode (2.4.1)
+  - SimpleKeychain (0.11.1)
+
+DEPENDENCIES:
+  - Auth0 (~> 1.19)
+
+SPEC REPOS:
+  trunk:
+    - Auth0
+    - JWTDecode
+    - SimpleKeychain
+
+SPEC CHECKSUMS:
+  Auth0: 483dcd2df3bb4abe48bb0b355a760181fb7f5477
+  JWTDecode: 4bd4da0cdf0f8154fd467fa48499f34ec057fb88
+  SimpleKeychain: 0c657949c7afff92337d2ff64052d5eb5c53823e
+
+PODFILE CHECKSUM: c01d0afc478d799b487325d746c455b7e4558054
+
+COCOAPODS: 1.9.1

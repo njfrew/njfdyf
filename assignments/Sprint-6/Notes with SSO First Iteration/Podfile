@@ -1,0 +1,6 @@
+platform :ios, '13.4'
+
+target 'Notes with SSO' do
+  use_frameworks!
+  pod 'Auth0', '~> 1.19'
+end
