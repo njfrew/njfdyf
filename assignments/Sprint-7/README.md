@@ -18,7 +18,33 @@ Notes with SSO is iOS application that allows you to quickly make, edit, and del
 
 Tap Log In to access the SSO and get to typing notes.
 
-## Log In
+## Logging In
 <img height="450" src="https://github.com/njfrew/njfdyf/blob/master/assignments/Sprint-7/Screenshots/Screen%20Shot%202020-05-16%20at%203.33.47%20PM.png">
 
 Use your preferred way to Log In to your device. Note: None of your data will leave your device
+
+## Viewing your Notes
+<img height="450" src="https://github.com/njfrew/njfdyf/blob/master/assignments/Sprint-7/Screenshots/Screen%20Shot%202020-05-16%20at%203.36.22%20PM.png">
+
+Now that you're signed in you can see all of your notes listed in front of you and when they were last edited. Tap any of the notes to see the content of that note. Or tap the plus button to add a new note.
+
+## Making a Note
+<img height="450" src="https://github.com/njfrew/njfdyf/blob/master/assignments/Sprint-7/Screenshots/Screen%20Shot%202020-05-16%20at%203.36.45%20PM.png">
+
+Give your note a title and type in the content box below whatever you'd like. When you are done making your note tap save or go back if you do not want to save it. If you wanted to add more to your note, do not worry you can always come back and edit your note.
+
+## Deleting a Note
+<img height="450" src="https://github.com/njfrew/njfdyf/blob/master/assignments/Sprint-7/Screenshots/Screen%20Shot%202020-05-16%20at%203.37.05%20PM.png">
+
+Swipe left on any of your notes to delete the note if you do not need it anymore.
+
+### Meta Data
+* Name: Notes with SSO
+* Version: 1.0.2
+* Category: Productivity
+* Description: Listed above
+* Keywords: notes, sso, productivity
+
+#### Contributer(s)
+* Noah Frew
+
