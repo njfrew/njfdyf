@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-Notes with SSO/Pods-Notes with SSO-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Auth0/Auth0.framework
+${BUILT_PRODUCTS_DIR}/JWTDecode/JWTDecode.framework
+${BUILT_PRODUCTS_DIR}/SimpleKeychain/SimpleKeychain.framework
