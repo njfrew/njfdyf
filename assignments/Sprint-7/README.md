@@ -9,6 +9,7 @@ I used iOS and Swift to build this app in Xcode. I used iOS's Core Data for data
 For this iteration, I worked on getting my app ready to be published on the App Store. I made an icon for my app and went through this guide: https://themanifest.com/mobile-apps/how-publish-your-app-apples-app-store-2018 to find out everything I needed to do to get it published. Below you will find the documentation and description needed for being published on the App Store. Unfortunately, an Apple Developer account costs money, so I was unable to go any further in this process. But with the ground work set when I do have the money to afford an account this should be an easy process.
 
 
+
 # <img height="30" src="https://github.com/njfrew/njfdyf/blob/master/assignments/Sprint-7/Screenshots/IMG_4D00995A642D-1.jpeg"> Welcome to Notes with SSO
 Notes with SSO is an iOS application that allows you to quickly create, edit, and delete important notes that you may take throughout the day.
 
