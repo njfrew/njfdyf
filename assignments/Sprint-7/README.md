@@ -10,5 +10,5 @@ For this iteration, I worked on getting my app ready to be published on the App 
 
 ## Welcome to Notes with SSO
 
-<img src="https://github.com/njfrew/njfdyf/blob/master/assignments/Sprint-7/Screenshots/Screen%20Shot%202020-05-16%20at%203.33.20%20PM.png">
+<img height-"450" src="https://github.com/njfrew/njfdyf/blob/master/assignments/Sprint-7/Screenshots/Screen%20Shot%202020-05-16%20at%203.33.20%20PM.png">
 
