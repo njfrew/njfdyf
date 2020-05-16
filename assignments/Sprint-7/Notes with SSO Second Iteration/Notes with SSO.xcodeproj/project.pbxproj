@@ -20,6 +20,9 @@
 		8CABAE4B245BAB9C0026F05F /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CABAE4A245BAB9C0026F05F /* NotesViewController.swift */; };
 		8CABAE4D245BACD60026F05F /* DisplayNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CABAE4C245BACD60026F05F /* DisplayNoteViewController.swift */; };
 		8CABAE63245F2BDF0026F05F /* Auth0.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8CABAE62245F2BDF0026F05F /* Auth0.plist */; };
+		8CDA5076247082AE0054A873 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CDA5073247082AE0054A873 /* Assets.xcassets */; };
+		8CDA5077247082AE0054A873 /* appstore.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CDA5074247082AE0054A873 /* appstore.png */; };
+		8CDA5078247082AE0054A873 /* playstore.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CDA5075247082AE0054A873 /* playstore.png */; };
 		DC7F8CD3B1CBEBA2AA36F737 /* Pods_Notes_with_SSO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5A756B8BF2EF3EEA949F14E /* Pods_Notes_with_SSO.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +65,9 @@
 		8CABAE4A245BAB9C0026F05F /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
 		8CABAE4C245BACD60026F05F /* DisplayNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayNoteViewController.swift; sourceTree = "<group>"; };
 		8CABAE62245F2BDF0026F05F /* Auth0.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Auth0.plist; sourceTree = "<group>"; };
+		8CDA5073247082AE0054A873 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8CDA5074247082AE0054A873 /* appstore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appstore.png; sourceTree = "<group>"; };
+		8CDA5075247082AE0054A873 /* playstore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playstore.png; sourceTree = "<group>"; };
 		E5A756B8BF2EF3EEA949F14E /* Pods_Notes_with_SSO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Notes_with_SSO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -116,6 +122,7 @@
 		8CABAE16245BAB770026F05F /* Notes with SSO */ = {
 			isa = PBXGroup;
 			children = (
+				8CDA5072247082AE0054A873 /* NotesIcons */,
 				8C8259DF2461FABE00E64A38 /* Note+CoreDataClass.swift */,
 				8C8259E02461FABE00E64A38 /* Note+CoreDataProperties.swift */,
 				8CABAE17245BAB770026F05F /* AppDelegate.swift */,
@@ -148,6 +155,16 @@
 				8CABAE3E245BAB790026F05F /* Info.plist */,
 			);
 			path = "Notes with SSOUITests";
+			sourceTree = "<group>";
+		};
+		8CDA5072247082AE0054A873 /* NotesIcons */ = {
+			isa = PBXGroup;
+			children = (
+				8CDA5073247082AE0054A873 /* Assets.xcassets */,
+				8CDA5074247082AE0054A873 /* appstore.png */,
+				8CDA5075247082AE0054A873 /* playstore.png */,
+			);
+			path = NotesIcons;
 			sourceTree = "<group>";
 		};
 		C398FD12416F893F400E8327 /* Pods */ = {
@@ -274,9 +291,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CABAE27245BAB790026F05F /* LaunchScreen.storyboard in Resources */,
+				8CDA5077247082AE0054A873 /* appstore.png in Resources */,
 				8CABAE24245BAB790026F05F /* Assets.xcassets in Resources */,
 				8CABAE1F245BAB770026F05F /* Main.storyboard in Resources */,
 				8CABAE63245F2BDF0026F05F /* Auth0.plist in Resources */,
+				8CDA5078247082AE0054A873 /* playstore.png in Resources */,
+				8CDA5076247082AE0054A873 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

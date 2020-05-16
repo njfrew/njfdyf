@@ -5,5 +5,10 @@ Download Notes With SSO First Iteration folder to your machine. Open the file No
 ## Technologies Used
 I used iOS and Swift to build this app in Xcode. I used iOS's Core Data for data persistence. I used Auth0 for the SSO, and I used CocoaPods to download and use it on my app. 
 
-## First Iteration
-I changed the UI colors and the layout of the app for a more unique and sleeker look. I tried to add multi-user functionality, but my app uses Core Data for data persistence which means a multi-user experience does not make sense. I would also have to completely rebuild the app and use a web server or CloudKit. I am unsure of what I'll add for my second iteration, but I don't plan on adding multi-user functionality to this app.
+## Second Iteration
+For this iteration, I worked on getting my app ready to be published on the App Store. I made an icon for my app and went through this guide: https://themanifest.com/mobile-apps/how-publish-your-app-apples-app-store-2018 to find out everything I needed to do to get it published. Below you will find the documentation and description needed for being published on the App Store. Unfortunately, an Apple Developer account costs money, so I was unable to go any further in this process. But with the ground work set when I do have the money to afford an account this should be an easy process.
+
+## Welcome to Notes with SSO
+
+/Users/noahfrew/Desktop/Mizzou/ComputerScience/CS4320/SoftwareEngineering/njfdyf/assignments/Sprint-7/Screenshots/Screen Shot 2020-05-16 at 3.33.20 PM.png
+
