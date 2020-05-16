@@ -10,7 +10,7 @@ For this iteration, I worked on getting my app ready to be published on the App 
 
 
 # <img height="20" src="https://github.com/njfrew/njfdyf/blob/master/assignments/Sprint-7/Screenshots/IMG_4D00995A642D-1.jpeg"> Welcome to Notes with SSO
-Notes with SSO is iOS application that allows you to quickly make, edit, and delete important notes that you take throughout the day.
+Notes with SSO is an iOS application that allows you to quickly create, edit, and delete important notes that you may take throughout the day.
 
 
 ## Get Started
@@ -26,12 +26,12 @@ Use your preferred way to Log In to your device. Note: None of your data will le
 ## Viewing your Notes
 <img height="450" src="https://github.com/njfrew/njfdyf/blob/master/assignments/Sprint-7/Screenshots/Screen%20Shot%202020-05-16%20at%203.36.22%20PM.png">
 
-Now that you're signed in you can see all of your notes listed in front of you and when they were last edited. Tap any of the notes to see the content of that note. Or tap the plus button to add a new note.
+Now that you're signed in, you can see all of your notes listed in front of you, and when they were last edited. Tap any of the notes to see the content of that note and be able to edit them. Or tap the plus button to add a new note.
 
 ## Making a Note
 <img height="450" src="https://github.com/njfrew/njfdyf/blob/master/assignments/Sprint-7/Screenshots/Screen%20Shot%202020-05-16%20at%203.36.45%20PM.png">
 
-Give your note a title and type in the content box below whatever you'd like. When you are done making your note tap save or go back if you do not want to save it. If you wanted to add more to your note, do not worry you can always come back and edit your note.
+Give your note a title and type in the content box below whatever you'd like. When you are done making your note, tap save or go back if you do not want to save it. If you wanted to add more to your note, do not worry you can always come back and edit your note later.
 
 ## Deleting a Note
 <img height="450" src="https://github.com/njfrew/njfdyf/blob/master/assignments/Sprint-7/Screenshots/Screen%20Shot%202020-05-16%20at%203.37.05%20PM.png">
